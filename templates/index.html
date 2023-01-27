@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <form action="/predict" method="POST">
+            Sepal Length: <input type="text" name="sepal_length"><br>
+            Sepal Width: <input type="text" name="sepal_width"><br>
+            Petal Length: <input type="text" name="petal_length"><br>
+            Petal Width: <input type="text" name="petal_width"><br>
+            <br>
+            <label for="choose">Choose a Classifier:</label>
+            <select id="classifiers" name = "classifiers">
+            <option value="1_LR" selected>LR</option>
+            <option value="2_KNN">KNN</option>
+            <option value="3_CART">CART</option>
+            <option value="4_RF">RF</option>
+            <option value="5_Adaboost">Adaboost</option>
+            <option value="6_GBM">GBM</option>
+            <option value="7_XGBoost">XGBoost</option>
+            <option value="8_LightGBM">LightGBM</option>
+            </select> <br>
+            <br>
+
+            Class: {{result}} <br>
+            <input type="submit" value="Predict !"> 
+        </form>
+    </body>
+</html>
